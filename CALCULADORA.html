@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>CALCULADORA | ROMAR IMÓVEIS</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <img class="cabecalho-logo" src="logo.png">
+        <h1 class="cabecalho-titulo">Calculadora - Multa Rescisória</h1>
+    </header>
+    <main>
+        <section class="conteudo-principal">
+            <div class="conteudo-principal-clausula">
+                <p class="conteudo-principal-clausula-titulo">CLAUSULA CONTRATUAL</p>
+                <p class="conteudo-principal-clausula1"> "O locatário, todavia, poderá devolvê-lo, pagando a multa pactuada, proporcional ao período de cumprimento do contrato, ou, na sua falta, a que for judicialmente estipulada." (Art 4º, Lei 8.245/1991 – Redação dada pela Lei nº 12.744, de 2012)</p>
+                <p class="conteudo-principal-clausula2">O locatário ficará dispensado da multa se a devolução do imóvel decorrer de transferência, pelo seu empregador, privado ou público, para prestar serviços em localidades diversas daquela do início do contrato, e se notificar, por escrito, o locador com prazo de, no mínimo, trinta dias de antecedência</p>
+            </div>
+        </section>
+
+        <section class="conteudo-secundario">
+            <div class="conteudo-secundario-dados">
+                <h2 class="conteudo-secundario-dados-titulo">Insira os dados abaixo</h2>
+                   <div class="vigencia-contratual">
+                    <p class="conteudo-secundario-vigencia">Vigência Contratual</p>
+                    <form class="formulario1">
+                        <label for="iniciodocontrato">Início</label>
+                        <input type="date" id="inicio"><br /><br />
+                        <label for="fimdocontrato">Termino</label>
+                        <input type="date" id="termino"><br />
+                    </div>
+                    </form>
+                <form class="formulario2">
+                    <label for="dataentrega">Data da Entrega das Chaves</label>
+                    <input type="date" id="entrega"><br /><br />
+                    <label for="valoraluguel">Valor do Aluguel</label>
+                    <input type="number" id="aluguel"> <br /><br />
+                </form>
+                <button class="calcular-botao">Calcular</button>
+            </div>
+
+            <div class="resultados">  
+                <p>Período do Contrato : <span id="difPeriodoMeses"></span> Meses</p><br />
+                <p>Período do Contrato : <span id="difPeriodoDias"></span> dia(s)</p><br />
+                <p>Período que Faltava : <span id="difPeriodoFalta"></span> dia(s)</p><br />
+                <p>Multa - Valor Integral (R$) : <span id="multaIntegral"></span> </p><br />
+                <p class="multa">Multa Proporcional (R$) : <span id="multaProporcional"></span> </p><br />
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p class="rodape">Ⓒ Copyright 2022 - Romar Imovéis - Setor Entrega de Chaves</p>
+    </footer>
+
+    <script src="calculo.js"></script> 
+</body>
+</html>
